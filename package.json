@@ -1,0 +1,26 @@
+{
+  "name": "rollup-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "",
+    "start": "rollup -c",
+    "server": "rollup -c rollup.server.config.js && node express/app.js",
+    "watch": "npm-run-all --parallel start server"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-preset-es2015-rollup": "^3.0.0",
+    "ejs": "^2.5.5",
+    "express": "^4.14.0",
+    "hbs": "^4.0.1",
+    "npm-run-all": "^4.0.1",
+    "pug": "^2.0.0-beta6",
+    "rollup": "^0.41.4",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-json": "^2.1.0",
+    "rollup-plugin-pug": "^0.1.2"
+  }
+}
